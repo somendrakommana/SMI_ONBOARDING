@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Onboarding Update" icon-name="custom:custom63">
+    <div class="slds-m-around_medium">
+    <template if:true={onboarding.data}>
+    <lightning-datatable
+    key-field="Name"
+    data={onboarding.data}
+    columns={columns}
+    onsave={handleSave}
+    draft-values={draftValues}></lightning-datatable>
+    </template>
+    </div>
+    </lightning-card>
+    </template>

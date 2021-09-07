@@ -1,0 +1,17 @@
+<template>
+    <template if:true={mentorRecord}>
+        <lightning-card title ={mentorRecord.Name} icon-name="custom:custom54">
+            <div class="slds-var-m-around_small">
+                <p>
+                
+                <strong>Mentor Name :  </strong> {mentorRecord.Mentor_Name__r.Name} </br>
+                <strong>Mentor Department :  </strong> {mentorRecord.Name} </br>
+                </p>
+                <br>
+                <p class="slds-var-m-around_small">
+                    <lightning-button label="View Details" variant="brand" alternative-text="Open record" onclick={handleOpenRecord}></lightning-button>
+                </p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

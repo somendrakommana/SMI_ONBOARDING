@@ -1,0 +1,17 @@
+<template>
+    <template if:true={employeeRecord}>
+        <lightning-card title ={employeeRecord.Name} icon-name="custom:custom54">
+            <div class="slds-var-m-around_small">
+                <p>
+                <strong>New Joinee ID :  </strong> {employeeRecord.Name} </br>
+                <strong>New Joinee Name :  </strong> {employeeRecord.New_Joinee__r.Name} </br>
+                <strong>Mentor :  </strong> {employeeRecord.Mentor__r.Name}
+                </p>
+                <br>
+                <p class="slds-var-m-around_small">
+                    <lightning-button label="View Details" variant="brand" alternative-text="Open record" onclick={handleOpenRecordClick}></lightning-button>
+                </p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

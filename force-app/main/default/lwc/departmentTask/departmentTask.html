@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Department Task"
+    icon-name="custom:custom53">
+    
+    <template if:true={departmentList}>
+        <lightning-datatable data={departmentList} columns={columns} key-field="Id"></lightning-datatable>
+    </template>
+    <template if:true={error}>
+        {error}
+    </template>
+    </lightning-card>
+</template>
